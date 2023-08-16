@@ -1,5 +1,13 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  word = word.toLowerCase()
+  let palindrome = word.split("").reverse().join("")
+
+  if (word === palindrome) {
+    return true;
+} else {
+    return false;
+}
 }
 
 /* 
